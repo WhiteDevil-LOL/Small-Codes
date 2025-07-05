@@ -3,7 +3,7 @@ import os
 from bs4 import BeautifulSoup 
 
 def getdata():
-    API_KEY = "3866ffdd8b588876d9265b7d9a8e450f"
+    API_KEY = "Your API KEY"
     url = f"https://api.openweathermap.org/data/2.5/weather?lat={17.3850}&lon={78.4867}&appid={API_KEY}&units=metric"
     responce = requests.get(url)
     return responce.json()
